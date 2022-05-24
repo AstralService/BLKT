@@ -3,11 +3,12 @@ var modal = document.querySelector(".modal");
 function toggleModal() {
     modal.classList.toggle("show-modal");
 }
-
-
+// note these are case sensitive
+const username = "blooket";
+const password = "cert";
 
 document.querySelector(".submitbtn").addEventListener("click", function () {
-    if (document.querySelector(".usernameinput").value == "Blooket" && document.querySelector(".passwordinput").value == "certified" || document.querySelector(".usernameinput").value == "Blooket" && document.querySelector(".passwordinput").value == "cert") {
+    if (document.querySelector(".usernameinput").value == username && document.querySelector(".passwordinput").value == password) {
         var logtext = document.querySelector(".logtext");
         var typewriter = new Typewriter(logtext, {
             loop: false,
